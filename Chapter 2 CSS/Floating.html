@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Floating Operation</title>
+    <style type="text/css">
+        .red {
+            color: red;
+        }
+
+        .large {
+            font-size: 200%;
+        }
+
+        #green {
+            color: green;
+        }
+
+        .underlined {
+            text-decoration: underline;
+        }
+
+        #first-section {
+            color: blue;
+            background-color: pink;
+            width: 200px;
+            float:left;
+        }
+        #second-section {
+            background-color: yellow;
+            width:200px;
+            float:right;
+        }
+        .clear-float {
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+<div id="first-section">
+    <p>The quick brown fox jumped over the lazy dog</p>
+    <p>I love internal CSS!</p>
+</div>
+<div id="second-section">
+    <p>This is some more text. <span class="underlined">And this text is underlined</span></p>
+    <!-- span used to add changes in specific text within a line-->
+    <h1>CSS is cool</h1>
+</div>
+<div class="clear-float">
+    <!-- new paragraph will clear the floating and underneath the both floating -->
+</div>
+    <p>This paragraph is not floated</p>
+    <a href="https://www.cnblogs.com/iyangyuan/archive/2013/03/27/2983813.html">很好的解释了CSS float的用法</a>
+</body>
+</html>
