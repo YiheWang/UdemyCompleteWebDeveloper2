@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Borders Operation</title>
+    <style type="text/css">
+        #square-red {
+            background-color:red;
+            border:10px yellow solid;
+            /* pixel, color, and style of the border*/
+        }
+        #square-blue {
+            background-color:blue;
+            border-style:ridge solid dotted dashed;
+            border-color:green beige pink palegoldenrod;
+            border-width:10px 5px 2px 1px;
+        }
+        #square-green {
+            background-color:green;
+            border-radius:50%;
+            /* when the border radius equal to half of the width of the square*/
+        }
+        .square {
+            width:100px;
+            height:100px;
+            margin:40px;
+            float:left; /* element remains in the flow of page*/
+        }
+
+    </style>
+</head>
+<body>
+    <div id="square-red" class="square">
+
+    </div>
+    <div id="square-blue" class="square">
+
+    </div>
+    <div id="square-green" class="square">
+
+    </div>
+
+</body>
+</html>
