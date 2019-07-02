@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Margins Operation</title>
+    <style type="text/css">
+        .red {
+            color: red;
+        }
+
+        .large {
+            font-size: 200%;
+        }
+
+        #green {
+            color: green;
+        }
+
+        .underlined {
+            text-decoration: underline;
+        }
+
+        #first-section {
+            color: #4285F4;
+            background-color: #CEF6CE;
+            width: 200px;
+            margin:100px 50px 20px 100px;
+            /* top, right, bottom, left*/
+            /*element remains on the page when using margins*/
+        }
+        #second-section {
+            background-color: #BAB4F7;
+            width:400px;
+            margin: 50px 20px;
+            /* 50px: top and bottom; 20px: left and right*/
+        }
+
+    </style>
+</head>
+<body>
+<div id="first-section">
+    <p>The quick brown fox jumped over the lazy dog</p>
+    <p>I love internal CSS!</p>
+</div>
+<div id="second-section">
+    <p>This is some more text. <span class="underlined">And this text is underlined</span></p>
+    <!-- span used to add changes in specific text within a line-->
+    <h1>CSS is cool</h1>
+</div>
+<p>This paragraph is not floated</p>
+
+</html>
