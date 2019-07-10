@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Technology-BBC News</title>
+    <style>
+        #topBar {
+            width:1000px;
+            margin:0 auto; /* center the div area */
+            background-color:white;
+            height:40px;
+        }
+        body {
+            margin:0;
+            padding:0;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        #logo {
+            width:98px;
+            height:30px;
+            margin:4px 8px;
+            float:left;
+        }
+        .topBar-Section {
+            float:left;
+            border-left: 1px grey solid;
+            /* create border on the left of each section*/
+            height:100%;
+        }
+        .topBar-Menu {
+            font-weight:bold;
+            font-size:90%;
+            padding: 13px 15px 0 15px;
+            height:27px;
+            /* 27 + 13 = 40px, padding creates extra pixels*/
+        }
+        #signIn-Image {
+            width:25px;
+            margin:8px 15px;
+            float:left;
+        }
+        #signIn-Text {
+            font-weight:bold;
+            font-size:90%;
+            position:relative;
+            top:10px;
+            padding-right:50px;
+        }
+        #more-arrow {
+            float:left;
+            width:20px;
+            margin-left:20px;
+        }
+        #search-box {
+            background-color: #E4E4E4;
+            border:none;
+            font-weight:bold;
+            font-size:14px;
+            padding:5px;
+            margin:5px 0 5px 5px;
+            float:left;
+        }
+        #magnifying-glass {
+            height:27px;
+            margin-top:5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="topBar">
+        <img id="logo" src="BBC_picture/BBC_LOGO.png">
+        <div id="signIn-div" class="topBar-Section">
+            <img id="signIn-Image" src="BBC_picture/signInImage.png">
+            <span id="signIn-Text">Sign In</span>
+        </div>
+        <div class="topBar-Section topBar-Menu">
+            <span>News</span>
+        </div>
+        <div class="topBar-Section topBar-Menu">
+            <span>Sport</span>
+        </div>
+        <div class="topBar-Section topBar-Menu">
+            <span>Weather</span>
+        </div>
+        <div class="topBar-Section topBar-Menu">
+            <span>iPlayer</span>
+        </div>
+        <div class="topBar-Section topBar-Menu">
+            <span>TV</span>
+        </div>
+        <div class="topBar-Section topBar-Menu">
+            <span style="float:left;">More</span>
+            <img id="more-arrow" src="BBC_picture/moreArrow.png">
+        </div>
+        <div class="topBar-Section">
+            <input id="search-box" type="text" placeholder="search">
+            <input type="image" id="magnifying-glass" src="BBC_picture/magnifying-Glass.png">
+        </div>
+    </div>
+</body>
+</html>
