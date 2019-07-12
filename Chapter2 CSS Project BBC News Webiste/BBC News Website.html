@@ -64,6 +64,79 @@
             height:27px;
             margin-top:5px;
         }
+        /* top area end here*/
+        .clear {
+            clear:both;
+            /* clear all the float*/
+        }
+        #menu-bar-container {
+            width:100%;
+            background-color:#BB1919;
+            height:70px;
+        }
+        #menu-bar-head {
+            width:77%;
+            margin:0 auto;
+        }
+        h1 {
+            margin:0;
+            color:white;
+            font-size:40px;
+            font-weight:normal;
+            padding-top:10px;
+            float:left;
+        }
+        #local-news {
+            border: 1px #BB4545 solid;
+            float:left;
+            width:130px;
+            position:relative;
+            top:23px;
+            left:80%;
+            text-align: center;/* make the text at the center*/
+        }
+        #local-news a {
+            padding:5px;
+            color:white;
+            text-decoration:none;
+            font-size:15px;
+            /*position:relative;
+            top:17px;*/
+        } /* a is contained in the local-news div*/
+        #local-news a:hover {
+            text-decoration:underline;
+        }
+
+        #menu-bar-body-container {
+            background-color: #BB1919;
+            width:100%;
+        }
+        #menu-bar-body {
+            width:80%;
+            margin:0 auto;
+            height:30px;
+        }
+        #menu-bar-body a{
+            color:white;
+            text-decoration: none;
+            padding:0 10px;
+            border-right: 1px #BB4545 solid;
+            font-size:14px;
+            position:relative;
+            top:5px;
+        }
+        #menu-bar-body a:hover{
+            text-decoration: underline;
+        }
+        .no-border {
+            border:none !important;
+            /*  use important will make it has priority*/
+        }
+        #down-arrow {
+            width:15px;
+            position:relative;
+            top:5px;
+        }
     </style>
 </head>
 <body>
@@ -95,6 +168,36 @@
         <div class="topBar-Section">
             <input id="search-box" type="text" placeholder="search">
             <input type="image" id="magnifying-glass" src="BBC_picture/magnifying-Glass.png">
+        </div>
+    </div>
+    <!-- top bar end here-->
+
+    <div class="clear"></div>
+    <div id="menu-bar-container">
+        <div id="menu-bar-head">
+            <h1>News</h1>
+            <div id="local-news">
+                <a href="">Find local news</a>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+        <div id="menu-bar-body-container">
+            <div id="menu-bar-body">
+                <a href="">Home</a>
+                <a href="">UK</a>
+                <a href="">World</a>
+                <a href="">Business</a>
+                <a href="">Politics</a>
+                <a href="">Tech</a>
+                <a href="">Science</a>
+                <a href="">Health</a>
+                <a href="">Education</a>
+                <a href="">Entertainment & Arts</a>
+                <a href="">Video & Audio</a>
+                <a href="" class="no-border">More</a>
+                <img id="down-arrow" src="BBC_picture/down-arraow.png">
+            </div>
         </div>
     </div>
 </body>
