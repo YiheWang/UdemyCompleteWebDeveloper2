@@ -137,6 +137,59 @@
             position:relative;
             top:5px;
         }
+
+        #page-container {
+            width:1000px;
+            margin:0 auto;
+        }
+        h2 {
+            font-weight:normal;
+            margin-top:40px;
+            font-size:20px;
+            border-bottom: 2px solid #A91717;
+            width:105px;
+        }
+
+        h3 a {
+            color:black;
+            font-size:30px;
+            text-decoration: none;
+        }
+        h3 a:hover {
+            color:#1167A8;
+        }
+        #article-container {
+            float:left;
+            /* make the whole container float to the left*/
+            width:600px;
+            border-right:1px solid #CCCCCC;
+            padding-right:20px;
+        }
+        #article-summary {
+            color:#5A5A5A;
+            width:220px;
+            float:left;
+            /* make the paragraph float to the left, so that
+            picture of mulan will lay at right side of paragraph*/
+        }
+        #main-article-image {
+            width:300px;
+            margin-top:20px;
+            margin-left:20px;
+        }
+        #article-hr {
+            border-top:1px solid #A91717;
+            /* use border top color instead of color*/
+            width:50px;
+        }
+        .article-link {
+            color:black;
+            text-decoration: none;
+            font-size:14px;
+        }
+        .article-link:hover {
+            color:#1167A8;
+        }
     </style>
 </head>
 <body>
@@ -197,6 +250,28 @@
                 <a href="">Video & Audio</a>
                 <a href="" class="no-border">More</a>
                 <img id="down-arrow" src="BBC_picture/down-arraow.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+    <div id="page-container">
+        <div id="main-article">
+            <h2>Technology</h2>
+            <h3><a href="">Asda bug exposed payment details</a></h3>
+            <div id="article-container">
+                <div id="article-summary">
+                    <p>There won't be songs or talking dragons, and the film's
+                antagonist will be a Chinese sorceress,
+                not an evil leader of the Hun a
+                rmy - but Mulan is making her return to the big screen.
+                    </p>
+                    <p>19 January 2016 | <a href="" style="color:red; text-decoration: none;">Technology</a></p>
+                    <hr id="article-hr" align="left">
+                    <p><a class="article-link" href="">Surveillance firm hit in hack attack</a></p>
+                    <p><a class="article-link" href="">eBay flaw has existed for mouths</a></p>
+                </div>
+                <img id="main-article-image" src="BBC_picture/mulan.jpg">
             </div>
         </div>
     </div>
