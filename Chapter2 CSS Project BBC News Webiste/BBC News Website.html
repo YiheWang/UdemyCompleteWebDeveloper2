@@ -158,6 +158,9 @@
         h3 a:hover {
             color:#1167A8;
         }
+        #main-article {
+            float:left;
+        }
         #article-container {
             float:left;
             /* make the whole container float to the left*/
@@ -189,6 +192,47 @@
         }
         .article-link:hover {
             color:#1167A8;
+        }
+
+        #watch-listen {
+            border:1px solid grey;
+            float:left;
+            margin-left:20px;
+            width:350px;
+            /* 600px article container + 1px border + 20px padding right
+             + 20px margin-left + 359px watch-listen = 1000px page container*/
+            position:relative;
+            top:100px;
+            height:100%;
+            /* 尝试解决在父容器内无效的问题*/
+        }
+        h4 {
+            font-weight:normal;
+            font-size:20px;
+        }
+        .article-side-image {
+            float:left;
+            width:90px;
+            margin-right:10px;
+        }
+        .watch-listen-link {
+            text-decoration: none;
+            color:black;
+            font-weight:bold;
+            font-size:18px;
+        }
+        .watch-listen-link:hover {
+            color:#1167A8;
+        }
+        .side-article {
+            width:250px;
+            float:left; /* side article float to left*/
+        }
+        .watch-listen-block {
+            height:70px;
+            margin-bottom: 20px;
+            /* if we want to use margin bottom or top,
+            we must define a height of the div*/
         }
     </style>
 </head>
@@ -256,7 +300,7 @@
 
     <div class="clear"></div>
     <div id="page-container">
-        <div id="main-article">
+        <div id="main-article"> <!-- float to the left-->
             <h2>Technology</h2>
             <h3><a href="">Asda bug exposed payment details</a></h3>
             <div id="article-container">
@@ -272,6 +316,30 @@
                     <p><a class="article-link" href="">eBay flaw has existed for mouths</a></p>
                 </div>
                 <img id="main-article-image" src="BBC_picture/mulan.jpg">
+            </div>
+        </div>
+        <div id="watch-listen">
+            <h4>Watch/Listen</h4>
+            <div class="watch-listen-block clear">
+                <img class="article-side-image" src="BBC_picture/1.png">
+                <div class="side-article">
+                    <a class="watch-listen-link" href="" >UK science chief backs blockchains</a>
+                    <p style="font-size:12px; margin-top:0;">19 January 2016 | <a href="" style="color:red; text-decoration: none;">Technology</a></p>
+                </div>
+            </div>
+            <div class="watch-listen-block clear">
+                <img class="article-side-image" src="BBC_picture/2.png">
+                <div class="side-article">
+                    <a class="watch-listen-link" href="" >UK science chief backs blockchains</a>
+                    <p style="font-size:12px; margin-top:0;">19 January 2016 | <a href="" style="color:red; text-decoration: none;">Technology</a></p>
+                </div>
+            </div>
+            <div class="watch-listen-block clear">
+                <img class="article-side-image" src="BBC_picture/3.png">
+                <div class="side-article">
+                    <a class="watch-listen-link" href="" >UK science chief backs blockchains</a>
+                    <p style="font-size:12px; margin-top:0;">19 January 2016 | <a href="" style="color:red; text-decoration: none;">Technology</a></p>
+                </div>
             </div>
         </div>
     </div>
