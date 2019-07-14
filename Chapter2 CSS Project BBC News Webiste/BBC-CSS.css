@@ -1,0 +1,230 @@
+#topBar {
+    width:1000px;
+    margin:0 auto; /* center the div area */
+    background-color:white;
+    height:40px;
+}
+body {
+    margin:0;
+    padding:0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+#logo {
+    width:98px;
+    height:30px;
+    margin:4px 8px;
+    float:left;
+}
+.topBar-Section {
+    float:left;
+    border-left: 1px grey solid;
+    /* create border on the left of each section*/
+    height:100%;
+}
+.topBar-Menu {
+    font-weight:bold;
+    font-size:90%;
+    padding: 13px 15px 0 15px;
+    height:27px;
+    /* 27 + 13 = 40px, padding creates extra pixels*/
+}
+#signIn-Image {
+    width:25px;
+    margin:8px 15px;
+    float:left;
+}
+#signIn-Text {
+    font-weight:bold;
+    font-size:90%;
+    position:relative;
+    top:10px;
+    padding-right:50px;
+}
+#more-arrow {
+    float:left;
+    width:20px;
+    margin-left:20px;
+}
+#search-box {
+    background-color: #E4E4E4;
+    border:none;
+    font-weight:bold;
+    font-size:14px;
+    padding:5px;
+    margin:5px 0 5px 5px;
+    float:left;
+}
+#magnifying-glass {
+    height:27px;
+    margin-top:5px;
+}
+/* top area end here*/
+.clear {
+    clear:both;
+    /* clear all the float*/
+}
+#menu-bar-container {
+    width:100%;
+    background-color:#BB1919;
+    height:70px;
+}
+#menu-bar-head {
+    width:77%;
+    margin:0 auto;
+}
+h1 {
+    margin:0;
+    color:white;
+    font-size:40px;
+    font-weight:normal;
+    padding-top:10px;
+    float:left;
+}
+#local-news {
+    border: 1px #BB4545 solid;
+    float:left;
+    width:130px;
+    position:relative;
+    top:23px;
+    left:80%;
+    text-align: center;/* make the text at the center*/
+}
+#local-news a {
+    padding:5px;
+    color:white;
+    text-decoration:none;
+    font-size:15px;
+    /*position:relative;
+    top:17px;*/
+} /* a is contained in the local-news div*/
+#local-news a:hover {
+    text-decoration:underline;
+}
+
+#menu-bar-body-container {
+    background-color: #BB1919;
+    width:100%;
+}
+#menu-bar-body {
+    width:80%;
+    margin:0 auto;
+    height:30px;
+}
+#menu-bar-body a{
+    color:white;
+    text-decoration: none;
+    padding:0 10px;
+    border-right: 1px #BB4545 solid;
+    font-size:14px;
+    position:relative;
+    top:5px;
+}
+#menu-bar-body a:hover{
+    text-decoration: underline;
+}
+.no-border {
+    border:none !important;
+    /*  use important will make it has priority*/
+}
+#down-arrow {
+    width:15px;
+    position:relative;
+    top:5px;
+}
+
+#page-container {
+    width:1000px;
+    margin:0 auto;
+}
+h2 {
+    font-weight:normal;
+    margin-top:40px;
+    font-size:20px;
+    border-bottom: 2px solid #A91717;
+    width:105px;
+}
+
+h3 a {
+    color:black;
+    font-size:30px;
+    text-decoration: none;
+}
+h3 a:hover {
+    color:#1167A8;
+}
+#main-article {
+    float:left;
+}
+#article-container {
+    float:left;
+    /* make the whole container float to the left*/
+    width:600px;
+    border-right:1px solid #CCCCCC;
+    padding-right:20px;
+}
+#article-summary {
+    color:#5A5A5A;
+    width:220px;
+    float:left;
+    /* make the paragraph float to the left, so that
+    picture of mulan will lay at right side of paragraph*/
+}
+#main-article-image {
+    width:300px;
+    margin-top:20px;
+    margin-left:20px;
+}
+#article-hr {
+    border-top:1px solid #A91717;
+    /* use border top color instead of color*/
+    width:50px;
+}
+.article-link {
+    color:black;
+    text-decoration: none;
+    font-size:14px;
+}
+.article-link:hover {
+    color:#1167A8;
+}
+
+#watch-listen {
+    border:1px solid grey;
+    float:left;
+    margin-left:20px;
+    width:350px;
+    /* 600px article container + 1px border + 20px padding right
+     + 20px margin-left + 359px watch-listen = 1000px page container*/
+    position:relative;
+    top:100px;
+    height:100%;
+    /* 尝试解决在父容器内无效的问题*/
+}
+h4 {
+    font-weight:normal;
+    font-size:20px;
+}
+.article-side-image {
+    float:left;
+    width:90px;
+    margin-right:10px;
+}
+.watch-listen-link {
+    text-decoration: none;
+    color:black;
+    font-weight:bold;
+    font-size:18px;
+}
+.watch-listen-link:hover {
+    color:#1167A8;
+}
+.side-article {
+    width:250px;
+    float:left; /* side article float to left*/
+}
+.watch-listen-block {
+    height:70px;
+    margin-bottom: 20px;
+    /* if we want to use margin bottom or top,
+    we must define a height of the div*/
+}
