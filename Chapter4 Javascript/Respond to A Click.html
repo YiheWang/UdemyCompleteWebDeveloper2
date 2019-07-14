@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Respond to A Click</title>
+</head>
+<body>
+    <p id="text">Hello World!</p>
+    <button id="myButton">Change text</button>
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function() {
+            document.getElementById("text").innerHTML = "Hello Rob!";
+        }
+    </script>
+</body>
+</html>
