@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var myArray = new Array();
+        myArray[0] = "pizza";
+        myArray[1] = "chocolate";
+        // bac way to create array
+
+        var tweets = ["Morning everybody","I love coffee!"];
+        //good way to create object
+        tweets.push("Back to work!");
+        //add element to array
+        tweets.splice(1, 1);
+        //start deleting from element number 1, and delete 1 number
+        tweets.splice(1, 0, "Cornflakes for breakfast");
+        //delete nothing and add string after index 1
+        tweets.splice(1, 1, "Cornflakes for breakfast", "Num num");
+        //delete 1 element from index 1 and replace it with these two strings
+        console.log(tweets);
+    </script>
+</body>
+</html>
