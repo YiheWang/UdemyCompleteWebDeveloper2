@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function in Javascript</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function average(num1, num2) {
+           return (num1 + num2) / 2;
+        }
+        var x = 5;
+        var y = 10;
+        average(x, y);
+
+        function doAGuess(correctAnswer) {
+            var guess = Math.random();
+            guess = Math.floor(guess * 6);
+            if (guess == correctAnswer) {
+               return (true);
+            }
+            else {
+                return (false);
+            }
+        }
+    </script>
+</body>
+</html>
