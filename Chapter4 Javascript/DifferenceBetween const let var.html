@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Difference between var const let Javascript</title>
+</head>
+<body>
+    <script type="text/javascript">
+            var a =10;
+            console.log(a);  // output 10
+            if (true) {
+                a=20;
+                console.log(a); // output 20
+            }
+            console.log(a);  // output 20
+
+            let b =10;
+            console.log(b);  // output 10
+            if(true){
+                let b=20;
+                console.log(b); // output 20
+            }
+            console.log(b);  // output 10
+
+            const MY_VARIABLE =10;
+            console.log(MY_VARIABLE);  //output 10
+            //const variable cannot be changed
+    </script>
+</body>
+</html>
