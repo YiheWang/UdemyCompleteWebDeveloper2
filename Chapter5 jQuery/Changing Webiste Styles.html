@@ -23,6 +23,7 @@
 <body>
 <div id="circle"></div>
 <div class="square"></div>
+<div class="square"></div>
 
 <script type="text/javascript">
     /*$("#circle").click(function() {
@@ -31,7 +32,15 @@
         //change style
     });*/
     $("div").click(function(){
+        if($(this).attr("id") == "circle"){
+            alert("You clicked on a " + $(this).attr("id"));
+        }
+        else {
+            alert("You Clicked on a square")
+        }
+
         $(this).css("display","none");
+        //only disappear the one we clicked
     });
 </script>
 </body>
