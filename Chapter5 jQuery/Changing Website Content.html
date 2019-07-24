@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change Website Content</title>
+    <script type="text/javascript" src="jQuery.min.js"></script>
+    <style type="text/css">
+        #circle {
+            width:150px;
+            height:150px;
+            border-radius: 50%;
+            background-color: green;
+            margin:10px;
+        }
+        .square {
+            width:150px;
+            height:150px;
+            background-color: red;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="circle"></div>
+    <p>This is some text</p>
+    <iframe src="http://www.baidu.com"></iframe>
+
+    <script type="text/javascript">
+        $("#circle").click(function() {
+            $("p").html("This is has changed!");
+            // change the element
+            // alert($("p").html()); get the element
+
+        });
+        $("#circle").hover(function() {
+            $("iframe").attr("src","http://www.hao123.com");
+        })
+    </script>
+</body>
+</html>

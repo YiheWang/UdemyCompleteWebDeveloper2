@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change Website Styles</title>
+    <script type="text/javascript" src="jQuery.min.js"></script>
+    <style type="text/css">
+        #circle {
+            width:150px;
+            height:150px;
+            border-radius: 50%;
+            background-color: green;
+            margin:10px;
+        }
+        .square {
+            width:150px;
+            height:150px;
+            background-color: red;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+<div id="circle"></div>
+<div class="square"></div>
+
+<script type="text/javascript">
+    /*$("#circle").click(function() {
+        alert($("#circle").css("background-color"));
+        $("#circle").css("background-color","red");
+        //change style
+    });*/
+    $("div").click(function(){
+        $(this).css("display","none");
+    });
+</script>
+</body>
+</html>
