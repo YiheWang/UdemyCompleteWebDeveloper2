@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fading Content</title>
+    <script type="text/javascript" src="jQuery.min.js"></script>
+    <style type="text/css">
+        #circle {
+            width:150px;
+            height:150px;
+            border-radius: 50%;
+            background-color: green;
+            margin:10px;
+        }
+        .square {
+            width:150px;
+            height:150px;
+            background-color: red;
+            margin:10px;
+        }
+        #text2 {
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <div id="circle"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <p id="text">This is some text</p>
+    <button id="fade-out">Fade out text</button>
+
+    <p id="text2">This text will be hidden initially</p>
+    <button id="fade-in">Fade in text</button>
+
+    <p id="text3">This is text 3</p>
+    <button id="toggle">Toggle Text</button>
+
+<script type="text/javascript">
+    /*$("#circle").click(function() {
+        alert($("#circle").css("background-color"));
+        $("#circle").css("background-color","red");
+        //change style
+    });*/
+    $("#toggle").click(function() {
+        if($("#text3").css("display") == "none") {
+            $("#text3").fadeIn();
+        }
+        else {
+            $("#text3").fadeOut();
+        }
+    }); // if there, disappear it. if not there, appear it
+
+    $("#fade-out").click(function(){
+        $("#text").fadeOut();
+    });
+    $("#fade-in").click(function(){
+        $("#text2").fadeIn();
+    });
+    $("div").click(function(){
+        $(this).fadeOut("slow",function(){
+            alert("fade out has finished")
+        });
+        //fade the content, then the function will run
+    });
+
+</script>
+</body>
+</html>
