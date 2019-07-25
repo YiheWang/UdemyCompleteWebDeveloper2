@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX</title>
+    <script type="text/javascript" src="../jQuery.min.js"></script>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+    <p></p>
+    <script type="text/javascript">
+        /*$.get("info.txt",function(data){
+            alert(data);
+        });*/
+        //nothing happened when failed
+
+        $.ajax("info.txt")
+            .done(function(data) {
+            $("p").html(data);
+        })
+            .fail(function() {
+            alert("Could not get data");
+        });
+        // it will appear message when disappear
+    </script>
+
+</body>
+</html>
