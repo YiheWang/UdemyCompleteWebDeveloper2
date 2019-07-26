@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intro to jQuery UI</title>
+    <script type="text/javascript" src="jquery-ui/external/jquery/jquery.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+    <style>
+        #resizable {
+            width:100px;
+            height:100px;
+            background-color: blue;
+            margin:10px;
+        }
+        #resizable2 {
+            width:100px;
+            height:100px;
+            background-color: blue;
+            margin:10px;
+        }
+        #also {
+            width:100px;
+            height:100px;
+            background-color: red;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="draggable">Drag me horizontally!</div>
+    <div style="width:400px;height:300px;background-color:yellow">
+        <p>I am stuck in the box!</p>
+    </div>
+
+    <div id="resizable"></div>
+    <div id="resizable2"></div>
+    <div id="also"></div>
+
+    <script type="text/javascript">
+        $("#draggable").draggable({axis: "x"});
+        $("p").draggable({containment:"parent"})
+        // it can only drag up and down because tag <p>
+        //already at the whole width of the box
+        $("#resizable").resizable();
+
+        $("#resizable2").resizable({
+            alsoResize:"#also",
+            resize: function(event, ui) {
+                if ($("#resizable2").width() > 300) {
+                    alert("Big enough!");
+                }// This is a callback function to run when achieve an event
+                //$("#resizable2").css("width") will return number includes px
+            }
+        }); // when we resize div 1, div 2 will also resize
+        $("#also").resizable();
+        // but when we resize div 2, div 1 will not resize
+    </script>
+</body>
+</html>
