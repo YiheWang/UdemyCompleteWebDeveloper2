@@ -7,3 +7,4 @@ Self learning about web developing on Udemy
  - Chapter5 jQuery [Cheat Sheet](https://oscarotero.com/jquery/)
  - Chapter6 Bootstrap [Reference Page](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
 - Chapter8 PHP [Reference Page](https://www.php.net/manual/zh/)
+- Chapter9 Mysql  [phpstorm connecting to local database](https://www.jetbrains.com/help/phpstorm/connectivity-problems.html)
