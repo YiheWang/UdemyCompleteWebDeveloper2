@@ -1,4 +1,7 @@
 <?php
+    session_start();
+    echo $_SESSION['username'];
+
     $hostName = "sql104.epizy.com";
     $userName = "epiz_22438332";
     $password = "yL8UIUdFE";
@@ -29,7 +32,9 @@
                     VALUES ('".mysqli_real_escape_string($link, $_POST['email'])."',
                     '".mysqli_real_escape_string($link, $_POST['password'])."')";
                 if (mysqli_query($link, $query)) {
-                    echo "<p>You have been signed up!</p>";
+                    $_SESSION['email'] = $_POST['email'];
+                    header("Location: Session.php");
+                    //send the page to session.php
                 }
                 else {
                     echo "<p>There was a problem signing you up - please try again later</p>";
