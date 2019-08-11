@@ -13,4 +13,14 @@
         header("Location: Project%20Secret%20Diary.php");
     }// not logged in case. For example, people want to access to diary url
     //without logging in. In that case, page will be redirect to home page
+
+    include("Header.php");
+?>
+    <!-- container fluid makes it full screen-->
+    <div class="container-fluid">
+        <textarea id="diary" class="form-control"></textarea>
+    </div>
+
+<?php
+    include("Footer.php");
 ?>

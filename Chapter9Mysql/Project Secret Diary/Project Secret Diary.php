@@ -106,19 +106,48 @@
     }
 ?>
 
-<form method="post">
-    <input type="email" name="email" placeholder="Your email">
-    <input type="password" name="password" placeholder="Password">
-    <input type="checkbox" name="stayLoggedIn" value='1'>
-    <input type="hidden" name="signUp" value="1">
-    <input type="submit" name="submit" value="Sign Up!">
-    <!-- submit all the stuff in form-->
-</form>
-<form method="post">
-    <input type="email" name="email" placeholder="Your email">
-    <input type="password" name="password" placeholder="Password">
-    <input type="checkbox" name="stayLoggedIn" value='1'>
-    <input type="hidden" name="signUp" value="0">
-    <input type="submit" name="submit" value="Log In!!">
-</form>
-<div id="error"><?php echo $error; ?></div>
+<?php include("Header.php");?>
+    <div class="container" id="homePageContainer">
+        <h1>Secret Diary</h1>
+        <p><strong>Store your thoughts permanently and securely.</strong></p>
+        <p>Log in with your username and password.</p>
+        <form method="post" id="logInForm">
+            <fieldset class="form-group">
+                <input type="email" class="form-control" name="email" placeholder="Your email">
+            </fieldset>
+            <fieldset class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="Password">
+            </fieldset>
+            <fieldset class="form-group form-check">
+                <input type="checkbox" id="logInCheckbox" class="form-check-input" name="stayLoggedIn" value='1'>
+                <label class="form-check-label" for="logInCheckbox">Stay log in</label>
+            </fieldset>
+            <fieldset class="form-group">
+                <input type="hidden" name="signUp" value="0">
+                <input type="submit" name="submit" class="btn btn-success" value="Log In!">
+            </fieldset>
+            <!-- submit all the stuff in form-->
+            <p><a class="toggleForm" href="#">Sign Up</a></p>
+            <!-- href="#" makes disable link to jump-->
+        </form>
+        <form method="post" id="signUpForm">
+            <fieldset class="form-group">
+                <input type="email" class="form-control" name="email" placeholder="Your email">
+            </fieldset>
+            <fieldset class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="Password">
+            </fieldset>
+            <fieldset class="form-group form-check">
+                <input type="checkbox" id=signUpCheckbox class="form-check-input" name="stayLoggedIn" value='1'>
+                <label class="form-check-label" for="signUpCheckbox">Stay log in</label>
+            </fieldset>
+            <fieldset class="form-group">
+                <input type="hidden" name="signUp" value="1">
+                <input type="submit" name="submit" class="btn btn-success" value="Sign Up!">
+            </fieldset>
+            <!-- submit all the stuff in form-->
+            <p><a class="toggleForm" href="#">Log In</a></p>
+        </form>
+        <div id="error"><?php echo $error; ?></div>
+    </div>
+<?php include("Footer.php"); ?>
