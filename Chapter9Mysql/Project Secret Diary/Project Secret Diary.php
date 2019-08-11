@@ -31,13 +31,13 @@
         }// check if connecting successful
 
         if (!$_POST["email"]) {
-            $error = "An email address is required!<br>";
+            $error = "An email address is required! ";
         }
         if(!$_POST["password"]) {
-            $error = "A password is required!<br>";
+            $error = "A password is required! ";
         }
         if($error != "") {
-            $error = "<p>There were errors(s) in your form:</p>".$error;
+            $error = "There were errors(s) in your form:".$error;
         }//check if user put in their email and password
         else {
             //Here is sign up section
@@ -46,7 +46,7 @@
                     mysqli_real_escape_string($link, $_POST["email"]) . "' LIMIT 1";
                 $result = mysqli_query($link, $query);
                 if (mysqli_num_rows($result) > 0) {
-                    $error = $error . "This email is taken<br>";
+                    $error = $error . "This email is taken. ";
                 }// check if this email is used by others
 
                 //The case that it is a new email address
@@ -148,6 +148,16 @@
             <!-- submit all the stuff in form-->
             <p><a class="toggleForm" href="#">Log In</a></p>
         </form>
-        <div id="error"><?php echo $error; ?></div>
+    </div>
+    <div class="container" style="width:600px">
+        <div id="error"><?php
+            if($error != "") {
+                echo '<div class="alert alert-danger" role="alert">'.
+                    $error.
+                    '<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>';
+            } ?></div>
     </div>
 <?php include("Footer.php"); ?>

@@ -43,6 +43,9 @@
             width:100%;
             height:100%;
         }
+        #containerLogInPage {
+            margin-top: 60px;
+        }
     </style>
 </head>
 <body>
