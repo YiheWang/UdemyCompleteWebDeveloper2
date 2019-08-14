@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 5 Forms</title>
+</head>
+<body>
+    <form id="myForm" action="processform.php">
+        <p>Placeholder<input type="text" placeholder="Insert Name Here"></p>
+        <p>Autofocus<input type="text" autofocus></p>
+        <p>Autocomplete Off<input type="text" autocomplete="off"></p>
+        <p>Required<input type="text" required></p>
+        <p>Email:<input type="email" placeholder="Email"></p>
+        <p>Pattern: <input type="text" pattern="[0-9]"></p>
+        <datalist id="names">
+            <select>
+                <option value="Rob">Rob</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Tommy">Tommy</option>
+                <option value="Ralphie">Ralphie</option>
+            </select>
+        </datalist>
+        <p>Autocomplete: <input type="text" list="names"></p>
+        <p>Multiple file upload<input type="file" multiple></p>
+        <p><input type="submit" value="Submit"
+        formaction="processform2.php"></p>
+        <!-- specify different submit button with different action-->
+    </form>
+    <p>Code outside form<input form="myForm" type="text"></p>
+    <!-- This will also submit when form with id myForm submitted-->
+</body>
+</html>
