@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Other HTML5 Features</title>
+    <script>
+        document.createElement("container");
+    </script>
+
+    <style>
+        article {
+            color: green;
+        }
+        header, footer, article, section, nav, menu {
+            display: block;
+            /* default is inline, not stretch to the whole line*/
+        }
+        #Sunset {
+            width:100px;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        I am an article!
+    </article>
+
+    <container>
+        I am a container!
+    </container>
+    <figure>
+        <img data-description="Sunset" id="Sunset" src="../Chapter8PHP/Image/Sunset.jpg" alt="Maggie Simpson">
+        <figcaption>
+            <p><mark>hahah</mark><small>sdsd</small>Maggie is Simpson</p>
+        </figcaption>
+    </figure>
+    <input type="range" min="0" step="10">
+
+    <div contenteditable="true">
+        This is some text!
+    </div>
+
+    <ul contenteditable="true">
+        <li>Buy milk</li>
+    </ul>
+
+    <script>
+        document.getElementById("Sunset").getAttribute("data-description");
+    </script>
+</body>
+</html>
