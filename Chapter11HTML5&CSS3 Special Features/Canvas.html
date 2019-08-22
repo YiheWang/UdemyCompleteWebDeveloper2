@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+    <style>
+        #myCanvas {
+            border: 1px solid grey;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="500" height="400">
+
+    </canvas>
+    <script>
+        var myCanvas = document.getElementById("myCanvas");
+        var context = myCanvas.getContext("2d");
+
+        var gradient = context.createLinearGradient(150, 100, 350, 300);
+        gradient.addColorStop(0, "white");
+        gradient.addColorStop(1, "#49C900");
+        //create a gradient color for the rect
+
+        context.fillStyle = gradient;
+        context.fillRect(150, 100, 200, 200);
+        // left top margin, then width and height
+
+        context.moveTo(150, 100);
+        context.lineTo(350, 300);
+        //line start from (150, 100) to (350, 300)
+        context.moveTo(150, 300);
+        context.lineTo(350, 100);
+        //context.lineWidth = 20;
+        context.strokeStyle = "#F42924";
+        context.stroke();
+
+        context.beginPath();
+        context.arc(100, 100, 50, Math.PI, 2*Math.PI);
+        // left top margin, 50 radius, circle from 0 to 360 degree
+        context.stroke();
+
+        var textGradient = context.createLinearGradient(200, 50, 300, 50);
+        // set the location of the gradient
+        textGradient.addColorStop(0, "red");
+        textGradient.addColorStop(1, "yellow");
+
+        context.fillStyle = textGradient;
+        context.font = "20px Arial";
+        context.fillText("My Canvas", 200, 50);
+    </script>
+</body>
+</html>
