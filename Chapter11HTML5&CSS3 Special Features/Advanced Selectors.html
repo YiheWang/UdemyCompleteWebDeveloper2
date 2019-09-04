@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Selectors</title>
+    <style>
+        h1 {
+            color:red;
+        }
+        .green {
+            color:green;
+        }
+        #blue{
+
+        }
+        div p {
+            font-weight: bold;
+        } /* select all the <p> within a div*/
+
+        h3 ~ p {
+            text-decoration: underline;
+        }/*  select <p> within a div with h3 tag before it */
+
+        h3 + p {
+            font-size: 150%;
+        } /* select the p tag following the h3 tag*/
+        a[target] {
+            color: yellow;
+        }
+        a[href*="google"]{
+            font-size: 150%
+        }/* select a link contains google*/
+    </style>
+</head>
+
+    <!--
+        ^=   begins with
+        $=   end with
+        -=   has the value between two spaces
+        |=   has the value separated by hyphens (-)
+    -->
+<body>
+    <div>
+        <h3>I am a heading</h3>
+        <p>I am 150% </p>
+        <a id="blue" href="" target="_blank">I am a link</a>
+        <p class="green">I am a paragraph</p>
+    </div>
+    <div>
+        <p>I am in another div</p>
+    </div>
+    <p>I am outside the div</p>
+    <a href="https://www.google.com">I am another the div</a>
+</body>
+</html>
