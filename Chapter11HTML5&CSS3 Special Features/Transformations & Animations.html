@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transformations & Animations</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 10px;
+            transition: 1s ease-in-out;
+            text-align:center;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 200%;
+        }
+        #box:hover {
+            /*transform: translate(50px, 50px);
+            /*transform: rotate(40deg);
+            /*transform:scale(2, 4);
+            transform: skew(20deg, 30deg);*/
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="box">box</div>
+</body>
+</html>
