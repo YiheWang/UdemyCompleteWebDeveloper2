@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gradients and Shadows</title>
+    <style>
+        #gradient {
+            width: 500px;
+            height: 200px;
+            background: linear-gradient(to bottom right, white, blue);
+        }
+        #radial-gradient {
+            width: 500px;
+            height: 200px;
+            background: radial-gradient(white, blue);
+        }
+        #challenge-gradient {
+            width:500px;
+            height: 200px;
+            background: linear-gradient(to bottom left, green, yellow);
+        }
+        h2 {
+            text-shadow: 2px 2px 4px green;
+            color: white;
+        }/* x y 偏移量， 模糊半径， 颜色  */
+        h3 {
+            text-shadow: 0 0 5px red;
+        }
+        #shadow {
+            width:200px;
+            height: 200px;
+            box-shadow: 3px 3px 3px grey;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div id="gradient">This is a gradient</div>
+    <div id="radial-gradient"></div>
+    <div id="challenge-gradient"></div>
+    <h2>This text will have a shadow</h2>
+    <h3>This text will glow</h3>
+    <div id="shadow"></div>
+</body>
+</html>
